@@ -1,0 +1,22 @@
+{
+  "body": "{\"requisicaoId\": \"R-001\", \"hospitalId\": 1, \"prioridade\": \"URGENTE\", \"itens\": [{\"hemoComponente\": \"HEMACIAS\", \"tipoSanguineo\": \"O_NEG\", \"quantidade\": 1}]}",
+  "resource": "/{proxy+}",
+  "path": "/guias",
+  "httpMethod": "POST",
+  "isBase64Encoded": false,
+  "queryStringParameters": null,
+  "pathParameters": {
+    "proxy": "guias"
+  },
+  "stageVariables": null,
+  "headers": {
+    "Content-Type": "application/json",
+    "Host": "127.0.0.1:3000"
+  },
+  "requestContext": {
+    "resourcePath": "/{proxy+}",
+    "httpMethod": "POST",
+    "path": "/guias",
+    "stage": "prod"
+  }
+}

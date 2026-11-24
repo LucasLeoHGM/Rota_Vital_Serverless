@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Rota Vital - guia de transporte de hemocomponentes (AWS Lambda + SAM local)
+
+Globals:
+  Function:
+    Timeout: 3          # experimento do timeout: troque para 10 e rode sam build de novo
+    MemorySize: 128
+
+Resources:
+  GuiaTransporteFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: guia_transporte/
+      Handler: app.lambda_handler
+      Runtime: python3.12
+      Architectures:
+        - x86_64
+      Events:
+        EmitirGuia:
+          Type: Api
+          Properties:
+            Path: /guias
+            Method: post
+
+Outputs:
+  GuiasApi:
+    Description: Endpoint POST /guias (simulado localmente pelo sam local start-api)
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/guias/"

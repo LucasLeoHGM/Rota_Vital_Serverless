@@ -1,0 +1,17 @@
+{
+  "requisicaoId": "R-004",
+  "hospitalId": 5,
+  "prioridade": "URGENTE",
+  "itens": [
+    {
+      "hemoComponente": "HEMACIAS",
+      "tipoSanguineo": "A_POS",
+      "quantidade": 1
+    },
+    {
+      "hemoComponente": "PLASMA",
+      "tipoSanguineo": "A_POS",
+      "quantidade": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "requisicaoId": "R-002",
+  "hospitalId": 2,
+  "prioridade": "NORMAL",
+  "itens": [
+    {
+      "hemoComponente": "HEMACIAS",
+      "tipoSanguineo": "A_POS",
+      "quantidade": 2
+    }
+  ]
+}
